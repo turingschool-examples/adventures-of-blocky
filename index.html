@@ -18,8 +18,10 @@
     window.assert = chai.assert;
   </script>
 
-  <script src="implementation.js"></script>
-  <script src="test.js"></script>
+  <script src="lib/block.js"></script>
+  <script src="lib/world.js"></script>
+  <script src="tests/block-test.js"></script>
+  <script src="tests/world-test.js"></script>
 
   <script>mocha.run();</script>
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js"></' + 'script>')</script>
