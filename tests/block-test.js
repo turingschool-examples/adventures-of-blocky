@@ -4,12 +4,12 @@ describe('Block', function () {
     assert.isFunction(Block);
   });
 
-  it('should instatiate our good friend, Blocky', function () {
+  it('should instantiate our good friend, Blocky', function () {
     var blocky = new Block();
     assert.isObject(blocky);
   });
 
-  it('should take take the first argument and set it as the "x" property of the instantiated object', function () {
+  it('should take the first argument and set it as the "x" property of the instantiated object', function () {
     var blocky = new Block(15);
     assert.equal(blocky.x, 15);
   });
@@ -19,34 +19,34 @@ describe('Block', function () {
     assert.equal(blocky.y, 30);
   });
 
-  it.skip('should take take the third argument and set it as the "width" property of the instantiated object');
+  it.skip('should take the third argument and set it as the "width" property of the instantiated object');
 
-  it.skip('should take take the fourth argument and set it as the "height" property of the instantiated object');
+  it.skip('should take the fourth argument and set it as the "height" property of the instantiated object');
 
   describe('blocky', function () {
 
-    it('should have a method called "moveRight()', function () {
+    it('should have a method called "moveRight()"', function () {
       var blocky = new Block(15, 30);
       assert.isFunction(blocky.moveRight);
     });
 
-    it('"moveRight()" should increment the "x" propety by 1', function () {
+    it('"moveRight()" should increment the "x" property by 1', function () {
       var blocky = new Block(15, 30);
       blocky.moveRight();
       assert.equal(blocky.x, 16);
     });
 
-    it.skip('should have a method called "moveLeft()');
+    it.skip('should have a method called "moveLeft()"');
 
-    it.skip('"moveLeft()" should increment the "x" propety by 1');
+    it.skip('"moveLeft()" should decrement the "x" property by 1');
 
     it.skip('should have a method called "moveDown()');
 
-    it.skip('"moveDown()" should increment the "x" propety by 1');
+    it.skip('"moveDown()" should decrement the "y" property by 1');
 
     it.skip('should have a method called "moveUp()');
 
-    it.skip('"moveUp()" should increment the "x" propety by 1');
+    it.skip('"moveUp()" should increment the "y" property by 1');
 
     /*
     Write tests for and implement the following methods:
@@ -74,7 +74,7 @@ describe('Block', function () {
 
     it.skip('should have a method called "grow()"');
 
-    it.skip('"grow()" should increment its both width and height by 1');
+    it.skip('"grow()" should increment both its width and height by 1');
 
     it.skip('should have a method called "shrink()"');
 
@@ -82,7 +82,7 @@ describe('Block', function () {
 
     /*
     At any given point, blocky should be able to find its top-left,
-    top-right, bottom-left, and bottom-right corners. It'll needed
+    top-right, bottom-left, and bottom-right corners. It'll need these
     methods later.
 
     Call these methods topRight(), topLeft(), bottomRight(), bottomLeft().
