@@ -13,10 +13,10 @@ npm install
 Run the following from your terminal:
 
 ```
-npm start
+npm test
 ```
 
-Once the server is up and running, visit `http://localhost:4000/` in your browser.
+You should see some tests failing
 
 ## Getting Started
 
