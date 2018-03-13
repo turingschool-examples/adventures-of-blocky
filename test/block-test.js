@@ -1,29 +1,33 @@
 describe('Block', function () {
 
-  it('should be a function', function () {
-    assert.isFunction(Block);
+  describe('the Block constructor', function () {
+
+    it('should be a function', function () {
+      assert.isFunction(Block);
+    });
+
+    it('should instantiate our good friend, Blocky', function () {
+      var blocky = new Block();
+      assert.isObject(blocky);
+    });
+
+    it('should take the first argument and set it as the "x" property of the instantiated object', function () {
+      var blocky = new Block(15);
+      assert.equal(blocky.x, 15);
+    });
+
+    it.skip('should take take the second argument and set it as the "y" property of the instantiated object', function () {
+      var blocky = new Block(15, 30);
+      assert.equal(blocky.y, 30);
+    });
+
+    it.skip('should take the third argument and set it as the "width" property of the instantiated object');
+
+    it.skip('should take the fourth argument and set it as the "height" property of the instantiated object');
+
   });
 
-  it('should instantiate our good friend, Blocky', function () {
-    var blocky = new Block();
-    assert.isObject(blocky);
-  });
-
-  it('should take the first argument and set it as the "x" property of the instantiated object', function () {
-    var blocky = new Block(15);
-    assert.equal(blocky.x, 15);
-  });
-
-  it.skip('should take take the second argument and set it as the "y" property of the instantiated object', function () {
-    var blocky = new Block(15, 30);
-    assert.equal(blocky.y, 30);
-  });
-
-  it.skip('should take the third argument and set it as the "width" property of the instantiated object');
-
-  it.skip('should take the fourth argument and set it as the "height" property of the instantiated object');
-
-  describe('blocky', function () {
+  describe('the Block object', function () {
 
     it('should have a method called "moveRight()"', function () {
       var blocky = new Block(15, 30);
